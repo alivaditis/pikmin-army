@@ -85,8 +85,8 @@ function App() {
     {allPikmin && allPikmin.map(pikmin => {
     return (
       <div className='new-pikmin' key={pikmin.id}>
-      <img className='pikmin-img' src={process.env.PUBLIC_URL + `${pikminTypes[pikmin.type]['stages'][pikmin.stage]}`}/>
-      <p>{pikmin.name}</p>
+        <img className='pikmin-img' src={process.env.PUBLIC_URL + `${pikminTypes[pikmin.type]['stages'][pikmin.stage]}`}/>
+        <p>{pikmin.name}</p>
       </div>
     )})}
     </>
